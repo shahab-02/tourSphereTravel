@@ -6,7 +6,6 @@ import logo from '../assets/logo.png'
 
 function Navbar() {
   return (
-
     // Nav Section
     <header className='flex bg-black justify-between w-full items-center p-4'>
       
