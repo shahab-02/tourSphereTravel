@@ -5,6 +5,7 @@ import icons from '../assets/icons.png'
 import mob2 from '../assets/mob2.png'
 import mob3 from '../assets/mob3.png'
 import mobs4 from '../assets/mobs4.png'
+import questionLogo from '../assets/questionLogo.png';
 import FAQItems from './FAQItems'
 
 function LandingPage() {
@@ -107,6 +108,32 @@ function LandingPage() {
        answer= "Lorem ipsum dolor sit amet consectetur adipisicing elit."/>
 
        </div>
+
+       {/* Section 8 */}
+  <div className="flex lg:flex-row overflow-hidden justify-between items-center mt-20 w-full h-40 bg-gradient-to-r from-red-400 to-red-700">
+  {/* Left div */}
+  <div className="flex p-14">
+    <div>
+      <img src={questionLogo} className="h-16 w-auto" />
+    </div>
+    <div>
+      <h1 className="text-white text-2xl pl-4 font-bold">Have a question?</h1>
+      <h3 className="text-white text-lg pl-4">Shoot us a message!</h3>
+    </div>
+  </div>
+
+  {/* Right div */}
+  <div className="relative flex items-center justify-center">
+    <div className="h-110 w-110 border-4 border-white rounded-full absolute right-[-20%] top-[-200%]"></div>
+    <div className="h-80 w-80 border-4 border-white rounded-full absolute right-[-60%] top-[-200%]"></div>
+    <div className='pr-20'>
+    <button className="relative bg-red-500 font-bold text-white px-6 py-3 rounded-full shadow-lg ">
+      CONTACT US
+    </button>
+    </div> 
+  </div>
+</div>
+
     
     
   
