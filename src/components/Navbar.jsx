@@ -1,27 +1,53 @@
-import React from 'react'
+import React, { useState }  from 'react'
 import logo from '../assets/logo.png'
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+
 
 
 
 
 function Navbar() {
+
+  const [open, setOpen] = useState(false);
   return (
 
-    // Nav Section
+   
     <header className='flex bg-black justify-between w-full items-center p-4'>
       
-        <a href="#home"><img src={logo} alt="Image Error" className='h-15 ml-15'/></a>
-      
-        <nav className=' text-white flex space-x-8 font-poppins'>
+        <a href="#home"><img src={logo} alt="Image Error" className='h-12 ml-4 md:h-14 md:ml-14 '/></a>
+
+        {/* Nav Section All Desktop */}
+
+        <nav className='hidden text-white lg:flex space-x-8 font-poppins '>
         <a href="#home" className= ' text-red-600 font-bold'>Home</a>
         <a href="#about">About Us</a>
         <a href="#services">Travel Services</a>
         <a href="#vacation">Vacation Quote</a>
         </nav>
       
-      <div className=' text-white '>
+      <div className='hidden lg:flex text-white '>
        <button className='bg-gradient-to-r from-[#F97150] to-[#FF668A]  mr-15 px-5 py-3 rounded-3xl font-poppins font-medium'>CONTACT US</button>
-      </div>
+      </div>  
+      {/* Tab Nav */}
+      <button className='lg:hidden text-white mr-4 md:mr-14 ' onClick={() => setOpen(!open)}>
+         {open ? (
+           <XMarkIcon className="h-8 w-8" />
+         ) : (
+         <Bars3Icon className="h-8 w-8" />
+        )}
+      </button>
+     {/* Mobile Dropdown */}
+      {open && (
+        <nav className="absolute top-16 left-0 w-full bg-black text-white flex flex-col items-center gap-4 py-6 font-poppins lg:hidden">
+          <a href="#home" className="text-red-600 font-bold">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#services">Travel Services</a>
+          <a href="#vacation">Vacation Quote</a>
+          <button className="bg-gradient-to-r from-[#F97150] to-[#FF668A] px-5 py-3 rounded-3xl font-poppins font-medium">
+            CONTACT US
+          </button>
+        </nav>
+      )}
     </header>
   )
 }

@@ -9,13 +9,13 @@ import mobs4 from '../assets/mobs4.png'
 function LandingPage() {
   return (
     <div className='font-montserrat'>
-    <div className='bg-cover bg-center flex' style={{backgroundImage: `url(${bgLogo})` }}>
-     <div className='flex-1 text-white pl-25 pt-20'>
+    <div className='bg-cover bg-center flex flex-col lg:flex-row' style={{backgroundImage: `url(${bgLogo})` }}>
+     <div className='lg:flex-1 text-white lg:pl-25 lg:pt-20'>
       <h1 className='lg:text-4xl xl:text-6xl font-bold lg:leading-normal'>
         Your Personal Travel Guide, Right in Your Pocket!
       </h1>
       <p className='lg:text-xl xl:text-3xl lg:pt-10 xl:pt-12 '>Effortlessly explore exciting destinations, book travel experiences, earn rewards, and embark on unforgettable journeys—all at your fingertips</p>
-      <img src={icons} className='lg:pt-15 xl:pt-18 h-30 object-cover lg:h-25 xl:h-32 2xl:h-35' />
+      <img src={icons} className='lg:pt-15 xl:pt-18 h-30 object-cover sm:h-15 lg:h-25 xl:h-32 2xl:h-35' />
      </div>
      <div className='flex-1'>
       <img src={mob1} className='max-w-full max-h-full p-15' />
