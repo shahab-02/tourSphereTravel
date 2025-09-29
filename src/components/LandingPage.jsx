@@ -127,7 +127,7 @@ function LandingPage() {
     <div className="h-110 w-110 border-4 border-white rounded-full absolute right-[-20%] top-[-200%]"></div>
     <div className="h-80 w-80 border-4 border-white rounded-full absolute right-[-60%] top-[-200%]"></div>
     <div className='pr-20'>
-    <button className="relative bg-red-500 font-bold text-white px-6 py-3 rounded-full shadow-lg ">
+    <button className=" relative bg-red-500 font-bold text-white px-6 py-3 rounded-full shadow-lg ">
       CONTACT US
     </button>
     </div> 
