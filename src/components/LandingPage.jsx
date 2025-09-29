@@ -24,7 +24,7 @@ function LandingPage() {
 
     {/* Section 2 */}
     
-    <div className='flex flex-col lg:flex-row lg:pl-25 lg:pt-20 items-center p-6 '>
+    <div className='flex flex-col lg:flex-row lg:pl-25 lg:pt-20 items-center p-8 '>
      <div className='flex-1 order-2 lg:order-1 pt-5'>
       <img src={mob2} className='lg:h-130 xl:h-150 w-auto object-contain' />
      </div>
@@ -37,32 +37,32 @@ function LandingPage() {
 
      {/* Section 3 */}
 
-     <div className=' flex flex-col lg:flex-row lg:pl-25 lg:pt-20 p-6'>
+     <div className=' flex flex-col lg:flex-row lg:pl-25 lg:pt-20 p-6 items-center'>
       
      <div className='flex-2'>
        <h2 className='text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-[#F97150] lg:pt-20 '>Can’t find <span className='text-black'>what you are looking for?</span></h2>
-       <p className='mt-8 lg:pr-15 lg:text-xl xl:text-2xl'>Let us know what tour you would like and our team will make it available for you</p>
-       <a href=""><button className='bg-[#E9584B] text-white font-bold px-5 py-3 rounded-3xl font-poppins mt-20'>
+       <p className='mt-8 lg:pr-15 text-md md:text-lg lg:text-xl xl:text-2xl'>Let us know what tour you would like and our team will make it available for you</p>
+       <a href=""><button className='bg-[#E9584B] text-white font-bold px-5 py-3 rounded-3xl font-poppins mt-10'>
         REQUEST A TOUR
        </button></a>
      </div>
 
      <div className='flex-1'>
-      <img src={mob3} className='lg:h-130 xl:h-150 w-auto mr-15 object-contain' />
+      <img src={mob3} className='pt-8 lg:h-130 xl:h-150 w-auto lg:pr-15' />
      </div>
     
      </div>
 
      {/* Section 4 */}
 
-     <div className='pt-30 text-center'>
-      <h2 className='lg:text-3xl xl:text-4xl text-[#F97150] font-bold'>Create <span className='text-black'>& share your own</span> tours</h2>
-      <p className='pt-8 lg:text-lg xl:text-xl'>Give yourself an opportunity to make extra income by creating your <br /> own tour experience with Tour Sphere.</p>
+     <div className='pt-10 text-center'>
+      <h2 className='p-8 text-2xl lg:text-3xl xl:text-4xl text-[#F97150] font-bold'>Create <span className='text-black'>& share your own</span> tours</h2>
+      <p className='p-4 text-center lg:mx-45 text-md md:text-lg lg:text-lg xl:text-2xl'>Give yourself an opportunity to make extra income by creating your own tour experience with Tour Sphere.</p>
      </div>
 
      {/* Section 5 */}
 
-     <ul className='pl-25 pt-15 leading-9 list-disc list-inside lg:text-lg xl:text-xl'>
+     <ul className='p-6 lg:pl-25 lg:pt-10 leading-6 lg:leading-9 list-disc  lg:text-lg xl:text-xl'>
       <li>Login to Tour Sphere App and create profile</li>
       <li>Click Create Tour</li>
       <li>Follow steps to add video, pictures and audio.</li>
@@ -74,8 +74,8 @@ function LandingPage() {
 
      {/* Section 6 */}
 
-     <div className='pt-20 flex justify-center'>
-      <img src={mobs4} className='lg:max-h-130 xl:max-h-150' />
+     <div className='p-4 lg:p-12 flex justify-center'>
+      <img src={mobs4} className='lg:h-130 xl:h-150' />
      </div>
 
 
