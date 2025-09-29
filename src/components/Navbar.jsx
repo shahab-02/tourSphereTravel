@@ -31,7 +31,7 @@ function Navbar() {
       {/* Tab/Mobile Nav */}
       <button className='text-white lg:hidden mr-4 md:mr-14 ' onClick={() => setOpen(!open)}>
         {open ? <XMarkIcon className='h-8 w-8'/> :
-        <Bars3Icon className='h-10 w-10'/>
+        <Bars3Icon className='h-8 w-8'/>
         }
       </button>
       {open && (
