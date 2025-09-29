@@ -28,15 +28,12 @@ function Navbar() {
       <div className='hidden lg:flex text-white '>
        <button className='bg-gradient-to-r from-[#F97150] to-[#FF668A]  mr-15 px-5 py-3 rounded-3xl font-poppins font-medium'>CONTACT US</button>
       </div>  
-      {/* Tab Nav */}
-      <button className='lg:hidden text-white mr-4 md:mr-14 ' onClick={() => setOpen(!open)}>
-         {open ? (
-           <XMarkIcon className="h-8 w-8" />
-         ) : (
-         <Bars3Icon className="h-8 w-8" />
-        )}
+      {/* Tab/Mobile Nav */}
+      <button className='text-white lg:hidden mr-4 md:mr-14 ' onClick={() => setOpen(!open)}>
+        {open ? <XMarkIcon className='h-8 w-8'/> :
+        <Bars3Icon className='h-10 w-10'/>
+        }
       </button>
-     {/* Mobile Dropdown */}
       {open && (
         <nav className="absolute top-16 left-0 w-full bg-black text-white flex flex-col items-center gap-4 py-6 font-poppins lg:hidden">
           <a href="#home" className="text-red-600 font-bold">Home</a>
