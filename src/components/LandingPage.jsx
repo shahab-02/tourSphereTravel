@@ -5,6 +5,7 @@ import icons from '../assets/icons.png'
 import mob2 from '../assets/mob2.png'
 import mob3 from '../assets/mob3.png'
 import mobs4 from '../assets/mobs4.png'
+import FAQItems from './FAQItems'
 
 function LandingPage() {
   return (
@@ -78,9 +79,37 @@ function LandingPage() {
       <img src={mobs4} className='lg:h-130 xl:h-150' />
      </div>
 
+     {/* Section 7 */}
+     <div className='pt-10 text-center'>
+      <h2 className='text-2xl lg:text-3xl xl:text-4xl text-black font-bold pb-20'>Frequently asked <span className='text-[#F97150]'>Questions</span></h2>
+   
+      <FAQItems question="How does it work without cell signal?" 
+      answer="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam porro dicta dolores voluptatem velit debitis, necessitatibus voluptate vero enim tenetur quo assumenda, eius nobis, quos ullam similique laborum fuga inventore!"  />
+      <FAQItems question="How do I buy tours?"
+       answer= "Lorem ipsum dolor sit amet consectetur adipisicing elit."/>
+       <FAQItems question="What languages do you offer?"
+       answer= "Lorem ipsum dolor sit amet consectetur adipisicing elit."/>
+       <FAQItems question="Can I gift a tour?"
+       answer= "Lorem ipsum dolor sit amet consectetur adipisicing elit."/>
+       <FAQItems question="Is there a time or date limit?"
+       answer= "Lorem ipsum dolor sit amet consectetur adipisicing elit."/>
+       <FAQItems question="How much does it cost?"
+       answer= "Lorem ipsum dolor sit amet consectetur adipisicing elit."/>
+       <FAQItems question="What devices will it work on?"
+       answer= "Lorem ipsum dolor sit amet consectetur adipisicing elit."/>
+       <FAQItems question="Do I have to follow a set itinerary?"
+       answer= "Lorem ipsum dolor sit amet consectetur adipisicing elit."/>
+       <FAQItems question="How to use coupon codes from websites like Getyourguide, Viator and Klook?"
+       answer= "Lorem ipsum dolor sit amet consectetur adipisicing elit."/>
+       <FAQItems question="How long does it take to receive a customized trip proposal?"
+       answer= "Lorem ipsum dolor sit amet consectetur adipisicing elit."/>
+       <FAQItems question="Can I make changes to the customized itinerary suggested by Tour Sphere Travel?"
+       answer= "Lorem ipsum dolor sit amet consectetur adipisicing elit."/>
 
-
+       </div>
     
+    
+  
     </div>
   )
 }
