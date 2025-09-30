@@ -1,7 +1,6 @@
 import React, { useState }  from 'react'
 import logo from '../assets/logo.png'
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { FaGooglePay, FaApple } from 'react-icons/fa';
 
 
 

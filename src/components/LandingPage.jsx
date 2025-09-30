@@ -125,7 +125,7 @@ function LandingPage() {
        </div>
 
        {/* Section 8 Desktop*/}
-  <div className="hidden lg:flex lg:flex-row overflow-hidden justify-between items-center mt-20 w-full h-40 bg-gradient-to-r from-[#FA6F5B] to-[#E51A1D]">
+  <div className="hidden lg:flex lg:flex-row overflow-hidden justify-between items-center mt-20 w-full h-full bg-gradient-to-r from-[#FA6F5B] to-[#E51A1D]">
        {/* Left div */}
   <div className="flex p-14">
     <div><img src={questionLogo} className="h-16 w-auto" /></div>
@@ -136,8 +136,8 @@ function LandingPage() {
   </div>
      {/* Right div */}
   <div className="relative flex items-center justify-center">
-    <div className="h-110 w-110 border-8 opacity-90 border-white rounded-full absolute right-[-20%] top-[-200%]"></div>
-    <div className="h-80 w-80 border-8 opacity-70 border-white rounded-full absolute right-[-60%] top-[-200%]"></div>
+    <div className="h-110 w-110 border-6 opacity-90 border-white rounded-full absolute right-[-20%] top-[-200%]"></div>
+    <div className="h-80 w-80 border-6 opacity-70 border-white rounded-full absolute right-[-60%] top-[-200%]"></div>
     <div className='pr-20'>
     <button className=" relative bg-[#E9584B] font-bold text-white px-6 py-4 rounded-full shadow-lg ">CONTACT US</button>
     </div> 
@@ -145,7 +145,7 @@ function LandingPage() {
 </div>
 
 {/* Section 8 Mobile and Tab */}
-<div className=" lg:hidden flex flex-row overflow-hidden justify-between items-center mt-20 w-full h-40 bg-gradient-to-r from-[#FA6F5B] to-[#E51A1D]">
+<div className=" lg:hidden flex flex-row overflow-hidden justify-between items-center mt-20 pt-4 pb-6 w-full h-full bg-gradient-to-r from-[#FA6F5B] to-[#E51A1D]">
        {/* Left div */}
   <div className="flex pl-4 md:pl-12">
     <div><img src={questionLogo} className="h-12 w-auto" /></div>
