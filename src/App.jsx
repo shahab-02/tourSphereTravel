@@ -1,6 +1,8 @@
 import Navbar from "./components/Navbar"
 import LandingPage from "./components/LandingPage"
 import Footer from "./components/Footer"
+import ContactPage from "./components/ContactPage"
+import AboutPage from "./components/AboutPage"
 
 function App() {
 
@@ -8,7 +10,9 @@ function App() {
     <div className="w-full h-full">
       
       <Navbar/>
-      <LandingPage/>
+      {/* <LandingPage/> */}
+      {/* <ContactPage/> */}
+      <AboutPage/>
       <Footer/>
       
      

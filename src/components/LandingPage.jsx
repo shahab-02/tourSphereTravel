@@ -11,6 +11,7 @@ import googlePlaystoreLogo from '../assets/googlePlaystoreLogo.svg'
 import appleStore from '../assets/appleStore.svg'
 
 
+
 function LandingPage() {
   return (
     <div className='font-montserrat'>
