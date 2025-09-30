@@ -1,6 +1,7 @@
 import React, { useState }  from 'react'
 import logo from '../assets/logo.png'
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { FaGooglePay, FaApple } from 'react-icons/fa';
 
 
 
@@ -12,7 +13,7 @@ function Navbar() {
   return (
 
    
-    <header className='flex bg-black justify-between w-full items-center p-4'>
+    <header className='flex bg-[#000000] opacity-90 justify-between w-full items-center p-4'>
       
         <a href="#home"><img src={logo} alt="Image Error" className='h-12 ml-4 md:h-14 md:ml-14 '/></a>
 
@@ -40,7 +41,7 @@ function Navbar() {
           <a href="#about">About Us</a>
           <a href="#services">Travel Services</a>
           <a href="#vacation">Vacation Quote</a>
-          <button className="bg-gradient-to-r from-[#F97150] to-[#FF668A] px-5 py-3 rounded-3xl font-poppins font-medium">
+          <button className="bg-gradient-to-r from-[#F97150] to-[#FF668A] px-6 py-4 rounded-3xl font-poppins font-medium">
             CONTACT US
           </button>
         </nav>

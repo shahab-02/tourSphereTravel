@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar"
 import LandingPage from "./components/LandingPage"
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -8,6 +9,8 @@ function App() {
       
       <Navbar/>
       <LandingPage/>
+      <Footer/>
+      
      
     </div>
         

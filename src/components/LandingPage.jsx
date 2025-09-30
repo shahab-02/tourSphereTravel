@@ -7,6 +7,9 @@ import mob3 from '../assets/mob3.png'
 import mobs4 from '../assets/mobs4.png'
 import questionLogo from '../assets/questionLogo.png';
 import FAQItems from './FAQItems'
+import googlePlaystoreLogo from '../assets/googlePlaystoreLogo.svg'
+import appleStore from '../assets/appleStore.svg'
+
 
 function LandingPage() {
   return (
@@ -17,7 +20,19 @@ function LandingPage() {
         Your Personal Travel Guide, Right in Your Pocket!
       </h1>
       <p className='text-base sm:text-lg md:text-xl lg:text-xl xl:text-3xl pt-6 sm:pt-8 md:pt-10 lg:pt-10 xl:pt-12 '>Effortlessly explore exciting destinations, book travel experiences, earn rewards, and embark on unforgettable journeys—all at your fingertips</p>
-      <img src={icons} className='pt-6 sm:pt-8 md:pt-10 lg:pt-15 xl:pt-18 h-14 md:h-26 lg:h-26 xl:h-32 2xl:h-35 mx-auto lg:mx-0 object-cover' />
+      <div className='flex space-x-4'>
+        <a href='#'>
+          <button className='lg:h-12 xl:h-14 mt-15 bg-black rounded-full shadow-2xl px-4 md:px-8 py-2 md:py-4 lg:px-6 lg:py-2'>
+          <img src={appleStore} className='h-full w-full  object-cover'/>
+          </button>
+        </a>
+        <a href='#'>
+          <button className='lg:h-12 xl:h-14 mt-15 bg-black rounded-full shadow-2xl px-4 md:px-8 py-2 md:py-4 lg:px-6 lg:py-2'>
+          <img src={googlePlaystoreLogo} className='h-full w-full  object-cover'/>
+          </button>
+        </a>
+        
+      </div>
      </div>
      <div className='flex-1'>
       <img src={mob1} className='max-w-full max-h-full p-6 sm:p-10 md:p-12' />
@@ -109,35 +124,45 @@ function LandingPage() {
 
        </div>
 
-       {/* Section 8 */}
-  <div className="flex lg:flex-row overflow-hidden justify-between items-center mt-20 w-full h-40 bg-gradient-to-r from-red-400 to-red-700">
-  {/* Left div */}
+       {/* Section 8 Desktop*/}
+  <div className="hidden lg:flex lg:flex-row overflow-hidden justify-between items-center mt-20 w-full h-40 bg-gradient-to-r from-[#FA6F5B] to-[#E51A1D]">
+       {/* Left div */}
   <div className="flex p-14">
+    <div><img src={questionLogo} className="h-16 w-auto" /></div>
     <div>
-      <img src={questionLogo} className="h-16 w-auto" />
-    </div>
-    <div>
-      <h1 className="text-white text-2xl pl-4 font-bold">Have a question?</h1>
-      <h3 className="text-white text-lg pl-4">Shoot us a message!</h3>
+    <h1 className="text-white text-2xl pl-4 font-bold">Have a question?</h1>
+    <h3 className="text-white text-lg pl-4">Shoot us a message!</h3>
     </div>
   </div>
-
-  {/* Right div */}
+     {/* Right div */}
   <div className="relative flex items-center justify-center">
-    <div className="h-110 w-110 border-4 border-white rounded-full absolute right-[-20%] top-[-200%]"></div>
-    <div className="h-80 w-80 border-4 border-white rounded-full absolute right-[-60%] top-[-200%]"></div>
+    <div className="h-110 w-110 border-8 opacity-90 border-white rounded-full absolute right-[-20%] top-[-200%]"></div>
+    <div className="h-80 w-80 border-8 opacity-70 border-white rounded-full absolute right-[-60%] top-[-200%]"></div>
     <div className='pr-20'>
-    <button className=" relative bg-red-500 font-bold text-white px-6 py-3 rounded-full shadow-lg ">
-      CONTACT US
-    </button>
+    <button className=" relative bg-[#E9584B] font-bold text-white px-6 py-4 rounded-full shadow-lg ">CONTACT US</button>
     </div> 
   </div>
 </div>
 
-    
-    
-  
-    </div>
+{/* Section 8 Mobile and Tab */}
+<div className=" lg:hidden flex flex-row overflow-hidden justify-between items-center mt-20 w-full h-40 bg-gradient-to-r from-[#FA6F5B] to-[#E51A1D]">
+       {/* Left div */}
+  <div className="flex pl-4 md:pl-12">
+    <div><img src={questionLogo} className="h-12 w-auto" /></div>
+    <div>
+    <h1 className="text-white text-xl pl-2 font-bold">Have a question?</h1>
+    <h3 className="text-white text-md pl-4 pb-4">Shoot us a message!</h3>
+    <button className=" bg-[#E9584B] font-bold text-white px-6 py-3 rounded-full shadow-lg ">CONTACT US</button>
+    </div>  
+  </div>
+     {/* Right div */}
+  <div className="relative flex items-center justify-center">
+    <div className="h-48 w-48 border-6 opacity-90 border-white rounded-full absolute top-[-40px] "></div>
+    <div className="h-38 w-38 border-6 opacity-70 border-white rounded-full absolute right-[-105px] top-[-80px]  "></div> 
+  </div>
+</div>
+
+  </div>
   )
 }
 
