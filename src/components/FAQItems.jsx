@@ -13,8 +13,8 @@ function FAQItems({ question, answer }) {
         className="flex justify-between items-center w-full text-left"
       >
         <span className="text-sm sm:text-md md:text-xl font-bold text-black">{question}</span>
-        <span className="text-xl text-gray-500">
-          {open ? <FaMinus/> : <FaPlus />}
+        <span className="text-xl text-[#CFCFCF]">
+          {open ? <FaMinus className="text-[#3D3D3D]"/> : <FaPlus className="text-[#3D3D3D]" />}
         </span>
       </button>
 
