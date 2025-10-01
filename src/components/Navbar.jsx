@@ -37,7 +37,8 @@ function Navbar() {
         </nav>
       
       <div className='hidden lg:flex text-white '>
-       <Link to= "contact"><button className='bg-gradient-to-r from-[#F97150] to-[#FF668A]  mr-15 px-5 py-3 rounded-3xl font-poppins font-medium '>CONTACT US</button></Link>
+       <Link to= "contact"><button className='bg-gradient-to-r from-[#F97150] to-[#FF668A]  
+       mr-15 px-5 py-3 rounded-3xl font-poppins font-medium  '>CONTACT US</button></Link>
       </div>  
       {/* Tab/Mobile Nav */}
       <button className='text-white lg:hidden mr-4 md:mr-14 ' onClick={() => setOpen(!open)}>
