@@ -10,8 +10,8 @@ function App() {
     <div className="w-full h-full">
       
       <Navbar/>
-      {/* <LandingPage/> */}
-      {/* <ContactPage/> */}
+      <LandingPage/>
+     <ContactPage/>
       <AboutPage/>
       <Footer/>
       
