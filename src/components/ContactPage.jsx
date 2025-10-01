@@ -1,5 +1,6 @@
 import React from 'react'
 import contactPageIamge from '../assets/contactPageImage.png'
+
 function ContactPage() {
   return (
     <div className='font-montserrat flex flex-col lg:flex-row w-full p-8 pb-30  lg:px-12 lg:py-30 lg:justify-around'>

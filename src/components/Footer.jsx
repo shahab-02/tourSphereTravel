@@ -10,8 +10,8 @@ function Footer() {
   return (
       <footer className='w-full h-full  bg-[#161616] font-montserrat'>
       <div className="flex justify-between  flex-col lg:flex-row lg:flex-1 text-white p-6 lg:pt-20 pb-20 relative overflow-hidden">
-        <div className='h-100 w-100 text-gray-600 rounded-full border-4 absolute opacity-40 top-[-130px] left-[-80px] '></div>
-        <div className='h-100 w-100 text-gray-600 rounded-full border-4 absolute opacity-40 top-[-130px] left-[100px] '></div>
+        <div className='h-100 w-100 text-gray-600 rounded-full border-4 absolute opacity-20 top-[-130px] left-[-80px] '></div>
+        <div className='h-100 w-100 text-gray-600 rounded-full border-4 absolute opacity-20 top-[-130px] left-[100px] '></div>
         {/* left div */}
         <div className='lg:pl-10 relative'>
 

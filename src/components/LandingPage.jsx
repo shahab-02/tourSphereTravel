@@ -9,6 +9,7 @@ import questionLogo from '../assets/questionLogo.png';
 import FAQItems from './FAQItems'
 import googlePlaystoreLogo from '../assets/googlePlaystoreLogo.svg'
 import appleStore from '../assets/appleStore.svg'
+import { Link } from 'react-router-dom'
 
 
 
@@ -140,7 +141,7 @@ function LandingPage() {
     <div className="h-110 w-110 border-6 opacity-90 border-white rounded-full absolute right-[-20%] top-[-200%]"></div>
     <div className="h-80 w-80 border-6 opacity-70 border-white rounded-full absolute right-[-60%] top-[-200%]"></div>
     <div className='pr-20'>
-    <button className=" relative bg-[#E9584B] font-bold text-white px-6 py-4 rounded-full shadow-lg ">CONTACT US</button>
+    <Link to= "contact"><button className=" relative bg-[#E9584B] font-bold text-white px-6 py-4 rounded-full shadow-lg ">CONTACT US</button></Link>
     </div> 
   </div>
 </div>

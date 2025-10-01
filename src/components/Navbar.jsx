@@ -20,14 +20,24 @@ function Navbar() {
         {/* Nav Section All Desktop */}
 
         <nav className='hidden text-white lg:flex space-x-8 font-poppins '>
-        <a href="#home" className= ' text-red-600 font-bold'>Home</a>
-        <a href="#about">About Us</a>
-        <a href="#services">Travel Services</a>
-        <a href="#vacation">Vacation Quote</a>
+        <div>
+          <NavLink to= "/" className={({isActive}) => `${isActive ? "text-red-600 font-bold" : ""}` }>
+            Home
+          </NavLink>
+        </div>
+        <div>
+          <NavLink to= "/about" className={({isActive}) => `${isActive ? "text-red-600 font-bold" : ""}` }>About Us</NavLink>
+        </div>
+        <div>
+          <Link>Travel Services</Link>
+        </div>
+        <div>
+          <Link>Vacation Quote</Link>
+        </div>
         </nav>
       
       <div className='hidden lg:flex text-white '>
-       <button className='bg-gradient-to-r from-[#F97150] to-[#FF668A]  mr-15 px-5 py-3 rounded-3xl font-poppins font-medium'>CONTACT US</button>
+       <Link to= "contact"><button className='bg-gradient-to-r from-[#F97150] to-[#FF668A]  mr-15 px-5 py-3 rounded-3xl font-poppins font-medium '>CONTACT US</button></Link>
       </div>  
       {/* Tab/Mobile Nav */}
       <button className='text-white lg:hidden mr-4 md:mr-14 ' onClick={() => setOpen(!open)}>
@@ -37,13 +47,22 @@ function Navbar() {
       </button>
       {open && (
         <nav className="absolute top-16 left-0 w-full bg-black text-white flex flex-col items-center gap-4 py-6 font-poppins lg:hidden">
-          <a href="#home" className="text-red-600 font-bold">Home</a>
-          <a href="#about">About Us</a>
-          <a href="#services">Travel Services</a>
-          <a href="#vacation">Vacation Quote</a>
-          <button className="bg-gradient-to-r from-[#F97150] to-[#FF668A] px-6 py-4 rounded-3xl font-poppins font-medium">
-            CONTACT US
-          </button>
+          <div>
+          <NavLink to= "/" className={({isActive}) => `${isActive ? "text-red-600 font-bold" : ""}` }>
+            Home
+          </NavLink>
+        </div>
+        <div>
+          <NavLink to= "/about" className={({isActive}) => `${isActive ? "text-red-600 font-bold" : ""}` }>About Us</NavLink>
+        </div>
+        <div>
+          <Link>Travel Services</Link>
+        </div>
+        <div>
+          <Link>Vacation Quote</Link>
+        </div>
+        <Link to= "contact"><button className='bg-gradient-to-r from-[#F97150] to-[#FF668A] px-6 py-4 rounded-3xl font-poppins font-medium '>CONTACT US</button></Link>
+          
         </nav>
       )}
     </header>
