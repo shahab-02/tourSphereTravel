@@ -24,22 +24,21 @@ function SelfGuidedTours() {
         <Card country = "Panama" Image = {Panama} />
         <Card country = "Puerto Rico" Image = {PuertoRico} />
         <Card country = "Bali" Image = {Bali} />
-       
-        
+        <Card country = "New York" Image = {NewYork}  />
       </div>
-      <h1 className='font-bold text-4xl text-[#E9584B] pt-12'>Explore Our Most Popular <span className='text-black'>Travel Packages</span></h1>
+      <h1 className='font-bold text-4xl text-[#E9584B] mt-10'>Explore Our Most Popular <span className='text-black'>Travel Packages</span></h1>
       {/* Cards */}
       <div className='flex space-x-6 overflow-x-auto scrollbar-hide'>
         <Card country = "Egypt" Image = {Egypt} />
         <Card country = "Panama" Image = {Panama} />
         <Card country = "Puerto Rico" Image = {PuertoRico} />
         <Card country = "Bali" Image = {Bali} />
-        <Card country = "New York" Image = {NewYork} />
+        <Card country = "New York" Image = {NewYork}  />
       </div>
 
       </div>
       {/* Section 2 */}
-      <div className='flex mt-20'>
+      <div className='flex mt-10'>
         <div className='flex-1'>
           <img src={mob3} className='lg:h-130 xl:h-150 w-auto mt-20' />
         </div>
