@@ -19,7 +19,7 @@ function SelfGuidedTours() {
       {/* Trips */}
       <h1 className='font-bold text-4xl text-[#E9584B] pt-12'>My<span className='text-black'>   Trips</span></h1>
       {/* Cards */}
-      <div className='flex space-x-6'>
+      <div className='flex space-x-6 overflow-x-auto scrollbar-hide'>
         <Card country = "Egypt" Image = {Egypt} />
         <Card country = "Panama" Image = {Panama} />
         <Card country = "Puerto Rico" Image = {PuertoRico} />
