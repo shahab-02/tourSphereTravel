@@ -31,7 +31,9 @@ function Navbar() {
           <NavLink to= "/about" className={({isActive}) => `${isActive ? "text-[#E94132] font-bold" : ""}` }>About Us</NavLink>
         </div>
         <div>
-          <Link>Travel Services</Link>
+          <NavLink to = "/travelServices" className={({isActive}) => `${isActive ? "text-[#E94132] font-bold" : ""}` }>
+            Travel Services
+          </NavLink>
         </div>
         <div>
           <Link>Vacation Quote</Link>
@@ -59,7 +61,9 @@ function Navbar() {
           <NavLink to= "/about" className={({isActive}) => `${isActive ? "text-[#E94132] font-bold" : ""}` }>About Us</NavLink>
         </div>
         <div>
-          <Link>Travel Services</Link>
+          <NavLink to = "/travelServices" className={({isActive}) => `${isActive ? "text-[#E94132] font-bold" : ""}` }>
+            Travel Services
+          </NavLink>
         </div>
         <div>
           <Link>Vacation Quote</Link>

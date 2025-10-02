@@ -6,6 +6,7 @@ import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route, R
 import LandingPage from './components/LandingPage.jsx'
 import AboutPage from './components/AboutPage.jsx'
 import ContactPage from './components/ContactPage.jsx'
+import SelfGuidedTours from './components/TravelServices/SelfGuidedTours.jsx'
 
 
 // Method 1 to create routes    
@@ -40,6 +41,7 @@ const router = createBrowserRouter(
       <Route path="" element={<LandingPage />}/>
       <Route path="about" element={<AboutPage />}/>
       <Route path="contact" element={<ContactPage />}/>
+      <Route path="travelServices" element={<SelfGuidedTours/>}/>
     </Route>
   )
 )

@@ -5,6 +5,8 @@ import ContactPage from "./components/ContactPage"
 import AboutPage from "./components/AboutPage"
 import PrivacyPolicy from "./components/PrivacyPolicy"
 import TermsConditions from "./components/TermsConditions"
+import SelfGuidedTours from "./components/TravelServices/SelfGuidedTours"
+import Card from "./components/TravelServices/Card"
 import { Outlet } from "react-router-dom"
 
 function App() {
@@ -12,8 +14,6 @@ function App() {
   return (
     <div className="w-full h-full">
       <Navbar/>
-      {/* <TermsConditions/>
-      <PrivacyPolicy/> */}
       <Outlet/>
       <Footer/>
      
