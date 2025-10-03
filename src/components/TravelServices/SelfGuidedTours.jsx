@@ -24,7 +24,7 @@ function SelfGuidedTours() {
         <Card country = "Panama" Image = {Panama} />
         <Card country = "Puerto Rico" Image = {PuertoRico} />
         <Card country = "Bali" Image = {Bali} />
-        <Card country = "New York" Image = {NewYork}  />
+        <Card country = "New York" Image = {NewYork} />
       </div>
       <h1 className='font-bold text-4xl text-[#E9584B] mt-10'>Explore Our Most Popular <span className='text-black'>Travel Packages</span></h1>
       {/* Cards */}
@@ -33,7 +33,7 @@ function SelfGuidedTours() {
         <Card country = "Panama" Image = {Panama} />
         <Card country = "Puerto Rico" Image = {PuertoRico} />
         <Card country = "Bali" Image = {Bali} />
-        <Card country = "New York" Image = {NewYork}  />
+        <Card country = "New York" Image = {NewYork} />
       </div>
 
       </div>
