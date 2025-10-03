@@ -13,11 +13,11 @@ function SelfGuidedTours() {
       {/* Section 1 */}
       <div>
       <h1 className='font-bold text-3xl text-[#E9584B] text-center lg:text-left'>Travel <span className='text-black'>Services</span></h1> 
-      <h1 className='font-bold text-4xl text-[#E9584B] pt-12'>Tailored-<span className='text-black'>Getaways for Every Traveler</span></h1>
+      <h1 className='font-bold text-3xl text-[#E9584B] pt-12'>Tailored-<span className='text-black'>Getaways for Every Traveler</span></h1>
       <p className='pt-4'>Discover vacation packages designed for groups, families, couples, and solo travelers. Whether you seek a relaxing beach retreat, an adventurous mountain escape, or a vibrant city exploration, we have the perfect package for you. Each itinerary is crafted with care to include must-see attractions, local experiences, and seamless travel arrangements.</p>
       <p className='text-md pt-4'>Ready to plan your trip? Browse our packages and let’s make your dream vacation a reality.</p>
       {/* Trips */}
-      <h1 className='font-bold text-4xl text-[#E9584B] pt-12'>My<span className='text-black'>   Trips</span></h1>
+      <h1 className='font-bold text-3xl text-[#E9584B] pt-12'>My<span className='text-black'>   Trips</span></h1>
       {/* Cards */}
       <div className='flex space-x-6 overflow-x-auto scrollbar-hide'>
         <Card country = "Egypt" Image = {Egypt} />
@@ -26,7 +26,7 @@ function SelfGuidedTours() {
         <Card country = "Bali" Image = {Bali} />
         <Card country = "New York" Image = {NewYork} />
       </div>
-      <h1 className='font-bold text-4xl text-[#E9584B] mt-10'>Explore Our Most Popular <span className='text-black'>Travel Packages</span></h1>
+      <h1 className='font-bold text-3xl text-[#E9584B] mt-10'>Explore Our Most Popular <span className='text-black'>Travel Packages</span></h1>
       {/* Cards */}
       <div className='flex space-x-6 overflow-x-auto scrollbar-hide'>
         <Card country = "Egypt" Image = {Egypt} />
@@ -38,12 +38,12 @@ function SelfGuidedTours() {
 
       </div>
       {/* Section 2 */}
-      <div className='flex mt-10'>
-        <div className='flex-1'>
+      <div className='flex flex-col lg:flex-row mt-10'>
+        <div className='lg:flex-1'>
           <img src={mob3} className='lg:h-130 xl:h-150 w-auto mt-20' />
         </div>
-        <div className='flex-2 text-justify'>
-          <h1 className='font-bold text-4xl text-[#E9584B]'>Location-<span className='text-black'>Based Audio Tours</span></h1>
+        <div className='lg:flex-2 text-justify mt-20 lg:mt-0'>
+          <h1 className='font-bold text-3xl text-[#E9584B]'>Location-<span className='text-black'>Based Audio Tours</span></h1>
           <p>In today’s fast-paced world, travelers crave convenience, personalization, and seamless experiences. Tour Sphere Mobile Tour App offers all that and more—right at your fingertips. Whether you’re exploring a bustling city, discovering hidden historical gems, or enjoying scenic outdoor trails, our app transforms every journey into a memorable adventure.</p>
           <div className='space-y-4'>
           <h2 className='font-bold text-xl mt-6'>Why Choose Tour Sphere Mobile Tour App?</h2>
